@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jessica McClure</title>
+    <link rel="stylesheet" href="main.css">
+    <script language="JavaScript" type="text/javascript" src="main.js"></script>
+
+</head>
+<body>
+    <!-- Hamburger navigation menu -->
+    <div id="sidenav">
+        <div id="navigation_hamburger" onclick="openNavigation()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="site-navigation">
+            <ul id="menu-main-menu" class="nav-menu">
+                <li id="menu-item-21" class="biography menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://tonydorio.com/biography/">About Me</a></li>
+                <li id="menu-item-262" class="work menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-262"><a href="http://tonydorio.com/work/" class="">Work</a>
+                    <ul class="sub-menu" style="display: block;">
+                        <li id="menu-item-265" class="all menu-item menu-item-type-custom menu-item-object-custom menu-item-265"><a href="http://tonydorio.com/all/" class="">Education</a></li>
+                        <li id="menu-item-562" class="menu-item menu-item-type-taxonomy menu-item-object-gal-categories menu-item-562"><a href="https://tonydorio.com/gal-categories/classic/" class="">Projects</a></li>
+                    </ul>
+                </li>
+                <li id="menu-item-601" class="awards menu-item menu-item-type-post_type menu-item-object-page menu-item-601"><a href="https://tonydorio.com/awards/">Awards</a></li>
+                <li id="menu-item-22" class="contact menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://tonydorio.com/contact/">Contact</a></li>
+                <li id="menu-item-90" class="createpdf menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-90"><a href="http://tonydorio.com/#createpdf" aria-current="page">CreatePDF</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Beginning of page -->
+    <div class="front-image"></div>
+    <div class="front-text">
+        <h1>Jessica McClure</h1>
+        <p>Computer Science Student</p>
+    </div>
+
+    <div id="mainContent" class="center">
+        <!-- Timeline -->
+        <h1>Timeline</h1>
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2>2019-2024 | MSci Computing Science</h2>
+                    <p>Completing an Integrated Masters at the University of St Andrews.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>2019 | Graduated Secondary School</h2>
+                    <p>Attended St Margaret's School for Girls where I achieved straight A's
+                    in my three SQA Advanced Higher subjects. Also attained straight A's in my five
+                    SQA Higher subjects.</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>2018 | Arria NLG</h2>
+                    <p>Completed work experience at this start up company. Gained project delivery experience.
+                    Provided real life user feedback on development systems to enhance customer experience.
+                    Communicated project completion to managers and other team members.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <br>
+        <h1>Projects</h1>
+        <div if="projects">
+            <div class="projects-row">
+                <div class="card">
+                    <img src="images/un-flag.png" alt="UN Flag" style="width:100%">
+                    <h1>Advanced Higher MUN Project</h1>
+                    <p class="date">2018-2019</p>
+                    <p>Completed a program in Java and MySQL accompanied by full documentation using the
+                        waterfall method. Created Login and Registration for two types of users, using information
+                        held in a relational database. This made use of algorithms such as bubble sort.
+                        Used data types such as array of objects. Went above the scope of the task by including
+                        a timer feature.</p>
+                    <p><button onclick="openGit('ah-mun')">See Code</button></p>
+                </div>
+                <div class="card">
+                    <img src="images/game-of-life.png" alt="GUI of Game of Life Program" style="width:100%">
+                    <h1>Conway's Game of Life</h1>
+                    <p class="date">2020</p>
+                    <p>The goal of this practical was to produce an implementation of Conway’s Game of Life. This
+                        implementation had a graphical interface that allowed a user to create a board
+                        configuration, and then processed it step by step using the game’s rules, showing the
+                        state of the board as it went along.</p>
+                    <p><button onclick="GitNotAvailable()">See Code</button></p>
+                </div>
+                <div class="card">
+                    <img src="images/eliza.png" alt="Terminal Interface of Eliza" style="width:100%">
+                    <h1>Eliza</h1>
+                    <p class="date">2020</p>
+                    <p>The goal of this practical was to produce an Eliza-style program of your own,
+                        in Java, with three different script files that it read from.
+                        It took input from the user on the command line, and printed output in response,
+                        mimicking a real person as closely as possible. Three personalities were made: Eliza
+                        a psychotherapist, Stuart a person offering technical support and Alex a conspiracy
+                        theorist.</p>
+                    <p><button onclick="GitNotAvailable()">See Code</button></p>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="projects-row">
+                <div class="card">
+                    <img src="images/animal-chess.png" alt="Animal Chess Interface" style="width:100%">
+                    <h1>Animal Chess</h1>
+                    <p class="date">2020</p>
+                    <p>The goal of this practical was to produce a computer version of animal chess,
+                        playable in a terminal or with an AI opponent.</p>
+                    <p><button onclick="GitNotAvailable()">See Code</button></p>
+                </div>
+                <div class="card">
+                    <img src="images/halloween.jpg" alt="Halloween Pumpkins" style="width:100%">
+                    <h1>Halloween Party Planner</h1>
+                    <p class="date">2020</p>
+                    <p>Created as part of Hack The Bubble 2020, the University of St Andrews' Computing Society's
+                        shorter hackathon. This is a website that plans a halloween party by generating a "spooky"
+                        personalised story and generating random outfits. Focused on using Node.js and communicating
+                        with a server.</p>
+                    <p><button onclick="openGit('halloween-pp')">See Code</button></p>
+                </div>
+                <div class="card">
+                    <img src="images/haskell-game.png" alt="Adventure Game Interface" style="width:100%">
+                    <h1>Text Based Adventure Game</h1>
+                    <p class="date">2021</p>
+                    <p>TThe objective of this project was to implement a simple interactive text adventure
+                        game, in Haskell. This took inspiration from "The Hitchhiker's Guide to the Galaxy". </p>
+                    <p><button onclick="GitNotAvailable()">See Code</button></p>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="projects-row">
+                <div class="card">
+                    <img src="images/scripting-language.jpg" alt="TScripting Language Word Cloud" style="width:100%">
+                    <h1>Scripting Language</h1>
+                    <p class="date">2021</p>
+                    <p>The objective of this project was to implement a small scripting language
+                        in Haskell. This consisted of expressions, variables, basic
+                        input/output and loops.</p>
+                    <p><button onclick="GitNotAvailable()">See Code</button></p>
+                </div>
+                <div class="card">
+                    <img src="images/python-data-analysis.png" alt="Data Analysis Example" style="width:100%">
+                    <h1>Data Analysis with Python</h1>
+                    <p class="date">2021</p>
+                    <p>The objective of this project was to get experience of using Python for
+                        data analysis by analysing the UK 2011 Census. By completing this project,
+                        I was able to further enhance my Python programming skills and get more
+                        detailed insights into components of the Python ecosystem.</p>
+                    <p><button onclick="GitNotAvailable()">See Code</button></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Relevant Coursework -->
+        <br>
+        <h1>Coursework</h1>
+
+        <!-- Skills -->
+        <br>
+        <h1>Technical Skills</h1>
+
+        <h2>Programming Languages</h2>
+
+        <p>Java</p>
+        <div class="skill-bar">
+            <div class="skill-individual" style="width:90%">90%</div>
+        </div>
+        <p>C</p>
+        <div class="skill-bar">
+            <div class="skill-individual" style="width:50%">50%</div>
+        </div>
+        <p>Python</p>
+        <div class="skill-bar">
+            <div class="skill-individual" style="width:60%">60%</div>
+        </div>
+        <p>Haskell</p>
+        <div class="skill-bar">
+            <div class="skill-individual" style="width:50%">50%</div>
+        </div>
+
+        <h2>Web Development</h2>
+        <p>HTML</p>
+        <div class="skill-bar">
+            <div class="skill-individual" style="width:80%">80%</div>
+        </div>
+        <p>CSS</p>
+        <div class="skill-bar">
+            <div class="skill-individual" style="width:70%">70%</div>
+        </div>
+        <p>JavaScript</p>
+        <div class="skill-bar">
+            <div class="skill-individual" style="width:70%">70%</div>
+        </div>
+        <p>Node JS</p>
+        <div class="skill-bar">
+            <div class="skill-individual" style="width:40%">40%</div>
+        </div>
+
+        <h2>Databases</h2>
+        <p>SQL</p>
+        <div class="skill-bar">
+            <div class="skill-individual" style="width:80%">80%</div>
+        </div>
+
+    </div>
+    <!--Awards -->
+    <br>
+    <h1>Awards</h1>
+
+    <!--Activities and Leadership-->
+    <br>
+    <h1>Activities and Leadership</h1>
+
+
+</body>
+</html>
