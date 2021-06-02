@@ -4,7 +4,7 @@ function openNavigation(){
     document.getElementById("site-navigation").classList.toggle('open');
     document.getElementById("sidenav").classList.toggle('open');
 
-};
+}
 
 function openGit(name){
     if (name == "ah-mun"){
@@ -14,7 +14,7 @@ function openGit(name){
     }else{
         window.open("https://github.com/JessicaMcclure97");
     }
-};
+}
 
 function GitNotAvailable(){
     if (window.confirm("Due to the University of St Andrew\'s good academic practice policy" +
@@ -22,5 +22,5 @@ function GitNotAvailable(){
         "will be open a new tab to my GitHub portfolio. Cancelling will let you stay on my website."))
     {
         window.open("https://github.com/JessicaMcclure97");
-    };
-};
+    }
+}

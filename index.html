@@ -7,7 +7,7 @@
     <script language="JavaScript" type="text/javascript" src="main.js"></script>
 
 </head>
-<p>
+<body>
     <!-- Hamburger navigation menu -->
     <div id="sidenav">
         <div id="navigation_hamburger" onclick="openNavigation()">
@@ -30,7 +30,7 @@
                 </li>
                 <li><a href="#awards-section">Awards</a></li>
                 <li><a href="#activities-section">Activities and Leadership</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#contact-section">Contact</a></li>
                 <li><a href="JessicaMcClure-CV.pdf" download>Download CV</a></li>
             </ul>
         </div>
@@ -294,16 +294,15 @@
         <h1 id="activities-section">Activities and Leadership</h1>
 
         <h2>Engineering and Aerospace Society | Secretary [September 2020 - Present]</h2>
-        <p>
-            A founding member of this society. Heavily involved in decision making for what is best of the committee and has gained organisation skills due to these meetings.
-                <ul>
-                    <li>Competed in Space Apps 2020 Hackathon.</li>
-                    <li>
-                        Participating in the UKSEDs Rocketry Competition which will allow me to work in a team with
-                        different academic disciplines.
-                    </li>
-                </ul>
-        </p>
+        <p> A founding member of this society. Heavily involved in decision making for what is best of the committee and has gained organisation skills due to these meetings.</p>
+        <ul>
+            <li>Competed in Space Apps 2020 Hackathon.</li>
+            <li>
+                Participating in the UKSEDs Rocketry Competition which will allow me to work in a team with
+                different academic disciplines.
+            </li>
+        </ul>
+
 
         <h2>Women in Computer Science Society | Member [September 2019 – Present]</h2>
         <p>
@@ -313,12 +312,36 @@
 
         <h2>St Andrew's Computing Society | Member [September 2019 - Present]</h2>
         <p>
-            A member of this society which provides talks to go to to develop my understanding of Computing Sciecne.
-            This society also participates and puts on their own Hackathons which I have partcipated in.
+            A member of this society which provides talks to go to to develop my understanding of Computing Science.
+            This society also participates and puts on their own Hackathons which I have participated in.
         </p>
 
         <br>
         <h1 id="contact-section">Contact Me</h1>
+
+        <form  id="contact_form" action="https://formspree.io/f/xleabopv" method="POST">
+            <div class="center">
+                <label>
+                    Your email:
+                    <br>
+                    <input type="email" name="_replyto" placeholder="someone@example.com">
+                </label>
+                <br><br>
+                <label>
+                    Subject:
+                    <br>
+                    <input type="text" name="subject" placeholder="e.g. Job Opportunity">
+                </label>
+                <br><br>
+                <label>
+                    Your message:
+                    <br>
+                    <textarea name="message" placeholder="Type your own message here ..."></textarea>
+                </label>
+
+                <button type="submit">Send</button>
+            </div>
+        </form>
 
     </div>
     <footer>
