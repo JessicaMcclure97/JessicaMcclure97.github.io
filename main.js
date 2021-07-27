@@ -11,6 +11,8 @@ function openGit(name){
         window.open("https://github.com/JessicaMcclure97/AH_MUN_2019");
     }else if(name == "halloween-pp"){
         window.open("https://github.com/wlabarron/HalloweenPlanner-2020");
+    }else if (name == "mathematically-curious") {
+        window.open("https://maths.curious-sta.org");
     }else{
         window.open("https://github.com/JessicaMcclure97");
     }
